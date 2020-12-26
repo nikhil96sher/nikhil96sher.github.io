@@ -19,7 +19,7 @@ navigation:
   - {title: Home, file: "index.html", icon: home}
   - {title: Publications, file: "publications.html", icon: newspaper}
   - {title: Patents, file: "patents.html", icon: newspaper}
-  - {title: Resume, url: "assets/Nikhil_Sheoran_resume.pdf", icon: resume}
+  - {title: Resume, url: "/assets/Nikhil_Sheoran_Resume.pdf", icon: resume}
 
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:nikhilsheoran96@gmail.com"}
