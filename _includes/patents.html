@@ -1,5 +1,5 @@
 <header>
-<h1><u>{{ include.title | default: page.title }}</u></h1>
+<h2><u>{{ include.title | default: page.title }}</u></h2>
 <article>
 
 {% assign patents = site.patents | where_exp:"item", "item.status == 'Granted'" | sort: 'year' | reverse %}

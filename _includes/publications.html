@@ -1,9 +1,7 @@
 <header>
-<h1><u>{{ include.title | default: page.title }}</u> - <a href="https://scholar.google.com/citations?user=PpqME9EAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a></u> 
-</h1>
+<h2><u>{{ include.title | default: page.title }}</u> - <a href="https://scholar.google.com/citations?user=PpqME9EAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a></u> 
+</h2>
 <article>
-
-
 {% assign publications = site.publications | sort: 'year' | reverse %}
 <ul class="archive">
     {% for pub in publications %}

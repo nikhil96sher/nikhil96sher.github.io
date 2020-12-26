@@ -1,5 +1,5 @@
+<header><h2><u>{{ include.title | default: page.title }}</u></h2>
 <article>
-  <header><h1>{{ include.title | default: page.title }}</h1></header>
   <ul class="archive">
 	{% assign news = site.news | sort: 'date' | reverse %}
     {% for news in news %}
@@ -9,3 +9,4 @@
     {% endfor %}
   </ul>
 </article>
+</header>
