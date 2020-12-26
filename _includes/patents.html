@@ -1,0 +1,52 @@
+<header>
+<h1><u>{{ include.title | default: page.title }}</u></h1>
+<article>
+
+{% assign patents = site.patents | where_exp:"item", "item.status == 'Granted'" | sort: 'year' | reverse %}
+<h2>Granted ({{ patents | size }})</h2>
+<ul class="archive">
+    {% for pub in patents %}
+    <li>
+	<b>{{ pub.title }}</b> <br/>
+
+	{{ pub.status }} - {{ pub.month }} {{ pub.year }} ({{ pub.office }})
+	{% if pub.link %}
+		<a href="{{ pub.link }}">[{{ pub.number }}]</a>
+	{% endif %}
+	<br/>
+	<i>Inventors: {{ pub.authors }}</i> <br/>
+    </li>
+    {% endfor %}
+</ul>
+
+{% assign patents = site.patents | where_exp:"item", "item.status == 'Published'" | sort: 'date' | reverse %}
+<h2>Published ({{ patents | size }})</h2>
+<ul class="archive">
+    {% for pub in patents %}
+    <li>
+	<b>{{ pub.title }}</b> <br/>
+
+	{{ pub.status }} - {{ pub.month }} {{ pub.year }} ({{ pub.office }})
+	{% if pub.link %}
+		<a href="{{ pub.link }}">[{{ pub.number }}]</a>
+	{% endif %}
+	<br/>
+	<i>Inventors: {{ pub.authors }}</i> <br/>
+    </li>
+    {% endfor %}
+</ul>
+
+{% assign patents = site.patents | where_exp:"item", "item.status == 'Filed'" | sort: 'date' | reverse %}
+<h2>Filed ({{ patents | size }})</h2>
+<ul class="archive">
+    {% for pub in patents %}
+    <li>
+	<b>{{ pub.title }}</b> <br/>
+	{{ pub.status }} - {{ pub.month }} {{ pub.year }} ({{ pub.office }})
+	<br/>
+	<i>Inventors: {{ pub.authors }}</i> <br/>
+    </li>
+    {% endfor %}
+</ul>
+</article>
+</header>

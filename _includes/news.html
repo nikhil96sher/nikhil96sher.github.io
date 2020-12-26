@@ -1,0 +1,11 @@
+<article>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <ul class="archive">
+	{% assign news = site.news | sort: 'date' | reverse %}
+    {% for news in news %}
+    <li>
+      <b>{{ news.month }} {{ news.year }}</b> - {{ news.text }}
+    </li>
+    {% endfor %}
+  </ul>
+</article>

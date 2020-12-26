@@ -1,0 +1,36 @@
+<header>
+<h1><u>{{ include.title | default: page.title }}</u> - <a href="https://scholar.google.com/citations?user=PpqME9EAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a></u> 
+</h1>
+<article>
+
+
+{% assign publications = site.publications | sort: 'year' | reverse %}
+<ul class="archive">
+    {% for pub in publications %}
+    <li>
+	<b>{{ pub.title }}</b>
+
+	{% if pub.pdf %}
+		<a href="{{ pub.pdf }}">[pdf]</a>
+	{% endif %}
+
+	{% if pub.original %}
+		<a href="{{ pub.original }}">[{{pub.original-name}}]</a>
+	{% endif %}
+
+	{% if pub.arxiv %}
+		<a href="{{ pub.arxiv }}">[arXiv]</a>
+	{% endif %}
+
+	{% if pub.slides %}
+		<a href="{{ pub.slides }}">[slides]</a>
+	{% endif %}
+	<br/>
+
+	<i>Authors: {{ pub.authors }}</i>
+	<br/>{{ pub.conference }} ({{ pub.short-conf }})
+    </li>
+    {% endfor %}
+</ul>
+</article>
+</header>
