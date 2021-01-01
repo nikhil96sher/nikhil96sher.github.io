@@ -5,7 +5,7 @@ conference: Pacific-Asia Conference on Knowledge Discovery and Data Mining
 short-conf: PAKDD 2018
 year: 2018
 month: 06
-<!-- original: https://link.springer.com/chapter/10.1007%2F978-3-319-93034-3_38
-original-name: springer -->
+original: https://link.springer.com/chapter/10.1007%2F978-3-319-93034-3_38
+original-name: springer
 pdf: /publications/PAKDD18-JainD-MeasurementofUX.pdf
 ---
