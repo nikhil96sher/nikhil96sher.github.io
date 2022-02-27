@@ -8,6 +8,5 @@ month: 08
 original: https://dl.acm.org/doi/abs/10.1145/3343737.3343741
 original-name: acm
 arxiv: https://arxiv.org/abs/1907.12916
-<!-- pdf: /publications/DeepPlace.pdf -->
 slides: /publications/DeepPlace_APSys19_Slides.pdf
 ---
