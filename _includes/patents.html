@@ -1,5 +1,6 @@
 <header>
-<h2><u>{{ include.title | default: page.title }}</u></h2>
+{% assign patents = site.patents | where_exp:"item", "item.status == 'Granted'" | sort: 'year' | reverse %}
+<h2><u>{{ include.title | default: page.title }} ({{ patents | size }})</u></h2>
 <article>
 
 {% assign patents = site.patents | where_exp:"item", "item.status == 'Granted'" | sort: 'year' | reverse %}
@@ -37,7 +38,7 @@
 </ul>
 
 <!-- {% assign patents = site.patents | where_exp:"item", "item.status == 'Filed'" | sort: 'date' | reverse %}
-<h2>Filed ({{ patents | size }})</h2>
+<h3>Filed ({{ patents | size }})</h3>
 <ul class="archive">
     {% for pub in patents %}
     <li>
