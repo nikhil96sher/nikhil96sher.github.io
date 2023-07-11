@@ -1,5 +1,6 @@
 ---
 title: "Measurement of Users' Experience on Online Platforms from Their Behavior Logs"
+type: conference
 authors: Deepali Jain, Atanu R. Sinha, Deepali Gupta, Nikhil Sheoran and Sopan Khosla
 conference: Pacific-Asia Conference on Knowledge Discovery and Data Mining
 short-conf: PAKDD 2018

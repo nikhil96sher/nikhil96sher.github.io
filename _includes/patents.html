@@ -36,7 +36,7 @@
     {% endfor %}
 </ul>
 
-{% assign patents = site.patents | where_exp:"item", "item.status == 'Filed'" | sort: 'date' | reverse %}
+<!-- {% assign patents = site.patents | where_exp:"item", "item.status == 'Filed'" | sort: 'date' | reverse %}
 <h2>Filed ({{ patents | size }})</h2>
 <ul class="archive">
     {% for pub in patents %}
@@ -47,6 +47,6 @@
 	<i>Inventors: {{ pub.authors }}</i> <br/>
     </li>
     {% endfor %}
-</ul>
+</ul> -->
 </article>
 </header>
