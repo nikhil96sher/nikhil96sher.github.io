@@ -1,6 +1,6 @@
 ---
 title: "A Step Towards Deep Online Aggregation"
-type: 1
+type: conference
 authors: Nikhil Sheoran, Supawit Chockchowwat, Arav Chheda, Suwen Wang, Riya Verma, Yongjoo Park
 conference: Proceedings of the ACM on Management of Data
 short-conf: SIGMOD 2023

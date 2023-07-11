@@ -1,6 +1,6 @@
 ---
 title: "DeepPlace: Learning to Place Applications in Multi-Tenant Clusters"
-type: 2
+type: workshop
 authors: Subrata Mitra, Shanka Subhra Mondal, Nikhil Sheoran, Neeraj Dhake, Ravinder Nehra and Ramanuja Simha
 conference: ACM Asia-Pacific Workshop on Systems
 short-conf: APSys 2019

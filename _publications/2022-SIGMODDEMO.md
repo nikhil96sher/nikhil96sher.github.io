@@ -1,6 +1,6 @@
 ---
 title: "Efficient Insights Discovery through Conditional Generative Model based Query Approximation"
-type: 2
+type: workshop
 authors: Vibhor Porwal, Subrata Mitra, Fan Du, John Anderson, Nikhil Sheoran, Anup Rao, Tung Mai, Gautam Kowshik, Sapthotharan Nair, Sameeksha Arora, Saurabh Mahapatra
 conference: Proceedings of the 2022 International Conference on Management of Data
 short-conf: SIGMOD 2022

@@ -1,8 +1,8 @@
 <header>
-{% assign patents = site.patents | where_exp:"item", "item.status == 'Granted'" | sort: 'year' | reverse %}
+{% assign patents = site.patents %}
 <h2><u>{{ include.title | default: page.title }} ({{ patents | size }})</u></h2>
-<article>
 
+<article>
 {% assign patents = site.patents | where_exp:"item", "item.status == 'Granted'" | sort: 'year' | reverse %}
 <h2>Granted ({{ patents | size }})</h2>
 <ul class="archive">

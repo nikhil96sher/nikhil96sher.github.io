@@ -2,9 +2,9 @@
 <h2><u>{{ include.title | default: page.title }}</u> - <a href="https://scholar.google.com/citations?user=PpqME9EAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a></u> 
 </h2>
 
-{% assign publications = site.publications | where_exp:"item", "item.type == 1" | sort: 'year' | reverse %}
-<h2>Conference Papers</h2>
+{% assign publications = site.publications | where_exp:"item", "item.type == 'conference'" | sort: 'year' | reverse %}
 <article>
+<h2>Conference Papers</h2>
 <ul class="archive">
 	{% for pub in publications %}
 		<li>
@@ -37,9 +37,9 @@
 </ul>
 </article>
 
-{% assign publications = site.publications | where_exp:"item", "item.type == 2" | sort: 'year' | reverse %}
-<h2>Workshop/Demo Papers</h2>
+{% assign publications = site.publications | where_exp:"item", "item.type == 'workshop'" | sort: 'year' | reverse %}
 <article>
+<h2>Workshop/Demo Papers</h2>
 <ul class="archive">
 	{% for pub in publications %}
 		<li>
