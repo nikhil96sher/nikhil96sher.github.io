@@ -23,6 +23,10 @@
 	{% if pub.slides %}
 		<a href="{{ pub.slides }}">[slides]</a>
 	{% endif %}
+
+	{% if pub.code %}
+		<a href="{{ pub.code }}">[code]</a>
+	{% endif %}
 	<br/>
 
 	<i>Authors: {{ pub.authors }}</i>
